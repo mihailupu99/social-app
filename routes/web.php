@@ -49,3 +49,8 @@ use App\Http\Controllers\SettingsController;
 
 Route::get('/settings', [SettingsController::class, 'index'])->name('settings');
 Route::post('/settings/update', [SettingsController::class, 'update'])->name('settings.update');
+
+
+use App\Http\Controllers\WeatherController;
+
+Route::get('/weather', [WeatherController::class, 'index']);

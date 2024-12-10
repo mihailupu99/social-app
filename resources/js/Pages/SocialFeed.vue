@@ -1,5 +1,7 @@
 <template>
     <FrontPageLayout>
+        <!-- <WeatherSidebar /> -->
+
         <div class="max-w-xl mx-auto">
             <!-- New Tweet Component -->
             <NewTweet @tweet-created="prependTweet" />
@@ -65,6 +67,7 @@ import "v3-infinite-loading/lib/style.css";
 import FrontPageLayout from "../Layouts/FrontPageLayout.vue";
 import NewTweet from "./Tweet/NewTweet.vue";
 import Feed from "./Components/TweetComponents/Feed.vue";
+import WeatherSidebar from "./Components/WeatherSidebar.vue";
 
 // Reactive state
 const allTweets = ref([]);

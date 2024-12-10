@@ -32,6 +32,11 @@
                         >My feed</Link
                     >
                     <Link
+                        :href="route('settings')"
+                        class="text-base font-semibold hover:text-gray-400 hover:underline transition"
+                        >Profile</Link
+                    >
+                    <Link
                         :href="route('logout')"
                         method="post"
                         as="button"

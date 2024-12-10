@@ -17,10 +17,14 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
     protected $fillable = [
-        'name',
+        'username',
         'email',
         'password',
+        'full_name',
+        'bio',
+        'profile_picture_url',
     ];
 
     /**
@@ -44,5 +48,53 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function tweets()
+    {
+        return $this->hasMany(Tweet::class);
+    }
+
+    public function followers()
+    {
+        return $this->belongsToMany(User::class, 'followers', 'follower_id', 'followed_id');
+    }
+
+    public function following()
+    {
+        return $this->belongsToMany(User::class, 'followers', 'followed_id', 'follower_id');
+    }
+
+    public function likes()
+    {
+        return $this->hasMany(Like::class);
+    }
+
+    // 
+    public function likedTweets()
+    {
+        // Define the many-to-many relationship
+        return $this->belongsToMany(Tweet::class, 'tweet_user')->withTimestamps();
+        // Assuming 'tweet_user' is the pivot table name
+    }
+
+    public function retweets()
+    {
+        return $this->hasMany(Retweet::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
+    public function notifications()
+    {
+        return $this->hasMany(Notification::class);
+    }
+
+    public function media()
+    {
+        return $this->hasMany(Media::class);
     }
 }

@@ -55,7 +55,7 @@
                                             id="username"
                                             type="text"
                                             v-model="form.username"
-                                            class="mt-1 p-2 block w-full rounded-md border-teal-300 focus:border-teal-500 focus:ring-teal-500 focus:ring-2 focus:ring-offset-0 focus:outline-none transition duration-150 ease-in-out"
+                                            class="mt-1 p-2 block w-full bg-teal-100 rounded-md border-teal-300 focus:border-teal-500 focus:ring-teal-500 focus:ring-2 focus:ring-offset-0 focus:outline-none transition duration-150 ease-in-out"
                                             required
                                         />
                                         <div
@@ -77,7 +77,7 @@
                                             id="email"
                                             type="email"
                                             v-model="form.email"
-                                            class="mt-1 p-2 block w-full rounded-md border-teal-300 focus:border-teal-500 focus:ring-teal-500 focus:ring-2 focus:ring-offset-0 focus:outline-none transition duration-150 ease-in-out"
+                                            class="mt-1 p-2 block w-full bg-teal-100 rounded-md border-teal-300 focus:border-teal-500 focus:ring-teal-500 focus:ring-2 focus:ring-offset-0 focus:outline-none transition duration-150 ease-in-out"
                                             required
                                         />
                                         <div
@@ -99,7 +99,7 @@
                                             id="password"
                                             type="password"
                                             v-model="form.password"
-                                            class="mt-1 p-2 block w-full rounded-md border-teal-300 focus:border-teal-500 focus:ring-teal-500 focus:ring-2 focus:ring-offset-0 focus:outline-none transition duration-150 ease-in-out"
+                                            class="mt-1 p-2 block w-full rounded-md bg-teal-100 border-teal-300 focus:border-teal-500 focus:ring-teal-500 focus:ring-2 focus:ring-offset-0 focus:outline-none transition duration-150 ease-in-out"
                                             required
                                         />
                                         <div
@@ -121,7 +121,7 @@
                                             id="password_confirmation"
                                             type="password"
                                             v-model="form.password_confirmation"
-                                            class="mt-1 p-2 block w-full rounded-md border-teal-300 focus:border-teal-500 focus:ring-teal-500 focus:ring-2 focus:ring-offset-0 focus:outline-none transition duration-150 ease-in-out"
+                                            class="mt-1 p-2 block w-full bg-teal-100 rounded-md border-teal-300 focus:border-teal-500 focus:ring-teal-500 focus:ring-2 focus:ring-offset-0 focus:outline-none transition duration-150 ease-in-out"
                                             required
                                         />
                                     </div>

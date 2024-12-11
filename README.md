@@ -17,3 +17,19 @@ composer install
 ```
 npm install
 ```
+
+### Descriere aplicatie
+
+Aceasta este o aplicatie clona asemanatoare twitter.
+![Pagina principala aplicatie](image.png)
+Prezinta functi de autentificare(creare cont si logare)
+![Functia logare](image-1.png)
+![Functia inregistrare](image-2.png)
+
+Abilitate de a crea tweeturi pe un feed, dar si de a vizualiza tweetul care reprezinta o ruta protejata.
+Fiecare tweet prin urmare are o sectiune unde poti scrie comentarii.
+![Feed principal](image-3.png)
+![Vizualizare tweet](image-4.png)
+
+La fel in panoul utilizatorului putem reseta parola si schimba emailul.
+![Panou profil](image-5.png)
